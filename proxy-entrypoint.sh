@@ -8,3 +8,4 @@ nohup docker pull hello-world &
 exec "$@"
 
 docker save $(docker images | sed '1d' | awk '{print $1 ":" $2}') -o images
+
